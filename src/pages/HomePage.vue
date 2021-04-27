@@ -188,6 +188,7 @@ export default {
 }
 // Squares
 .square {
+  border-radius: 15%;
   height: 90px;
   width: 110px;
 }
