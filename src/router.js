@@ -12,9 +12,29 @@ const routes = [
     component: loadPage('HomePage')
   },
   {
-    path: '/about',
-    name: 'About',
-    component: loadPage('AboutPage')
+    path: '/biopage',
+    name: 'BioPage',
+    component: loadPage('BioPage')
+  },
+  {
+    path: '/hobbiespage',
+    name: 'HobbiesPage',
+    component: loadPage('HobbiesPage')
+  },
+  {
+    path: '/skillspage',
+    name: 'SkillsPage',
+    component: loadPage('SkillsPage')
+  },
+  {
+    path: '/contactpage',
+    name: 'ContactPage',
+    component: loadPage('ContactPage')
+  },
+  {
+    path: '/appspage',
+    name: 'AppsPage',
+    component: loadPage('AppsPage')
   },
   {
     path: '/account',

@@ -1,45 +1,69 @@
 <template>
   <div class="container-fluid bg-main">
-    <div class="row align-items-end justify-content-center margin-top">
+    <div class="row justify-content-center mt-5">
       <div
-        class="col-6"
+        class="col-6 text-white text-center pl-3"
+        data-aos="fade-down"
+        data-aos-offset="500"
+        data-aos-duration="1000"
+      >
+        <h1>CONTACT ME</h1>
+        <br />
+        <h5>
+          If you'd like to make an enquiry, please feel free to get in touch,
+          and I will respond as soon as possible.
+        </h5>
+        <br />
+        <h6 class="text-color">{ HIT AN ICON }</h6>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div
+        class="col-2 align-items-center li-border mt-3"
         data-aos="fade-left"
         data-aos-offset="500"
         data-aos-duration="1000"
       >
-        <h1 class="text-right font-large font-jj text-white name-margin">
-          JONESY
-        </h1>
-        <br />
-        <h1 class="text-right font-large font-jj text-white">JAVA</h1>
-      </div>
-      <div class="col-6">
-        <div class="row">
-          <div class="square one-bg blocksRowOne"></div>
-        </div>
-        <div class="row mt-3">
-          <div class="square two-bg blocksRowOne"></div>
-          <div class="square two-bg blocksRowTwo position-a"></div>
-        </div>
-        <div class="row mt-3">
-          <div class="square three-bg blocksRowOne"></div>
-          <div class="square three-bg blocksRowTwo position-a"></div>
-          <div class="square three-bg blocksRowThree position-a"></div>
-        </div>
-        <div class="row mt-3">
-          <div class="square four-bg blocksRowOne"></div>
-          <div class="square four-bg blocksRowTwo position-a"></div>
-          <div class="square four-bg blocksRowThree position-a"></div>
-          <div class="square four-bg blocksRowFour position-a"></div>
-        </div>
+        <img
+          class="img-size"
+          src="https://image.flaticon.com/icons/png/512/174/174857.png"
+          alt=""
+        />
       </div>
     </div>
-
+    <div class="row justify-content-center mt-5">
+      <div
+        class="col-6 align-items-center icon-border"
+        data-aos="fade-right"
+        data-aos-offset="500"
+        data-aos-duration="1000"
+      >
+        <img
+          class="img-size"
+          src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div
+        class="col-2 align-items-center icon-border"
+        data-aos="fade-left"
+        data-aos-offset="500"
+        data-aos-duration="1000"
+      >
+        <img
+          class="img-size"
+          src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png"
+          alt=""
+        />
+      </div>
+    </div>
     <div
       class="row justify-content-center text-white mt-5"
       data-aos="fade-up"
       data-aos-offset="300"
-      data-aos-delay="2400"
+      data-aos-delay="1100"
       data-aos-duration="1000"
     >
       <div class="col-1 text-center">
@@ -119,47 +143,24 @@
 </template>
 
 <script>
-import { onMounted } from 'vue'
-import anime from 'animejs/lib/anime.min.js'
+import { useRoute } from 'vue-router'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useRoute } from 'vue-router'
 
 AOS.init()
 export default {
-  name: 'Home',
+  name: 'CContactPage',
   setup() {
     const route = useRoute()
-    onMounted(() => {
-      anime({
-        targets: '.blocksRowOne',
-        translateX: 0,
-        delay: anime.stagger(100, { start: 1000 })
-      })
-      anime({
-        targets: '.blocksRowTwo',
-        translateX: 125,
-        delay: anime.stagger(500, { start: 1000 })
-      })
-      anime({
-        targets: '.blocksRowThree',
-        translateX: 250,
-        delay: anime.stagger(500, { start: 1000 })
-      })
-      anime({
-        targets: '.blocksRowFour',
-        translateX: 375,
-        delay: anime.stagger(1000, { start: 1000 })
-      })
-    })
     return {
       route
     }
-  }
+  },
+  components: {}
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 // Hover Effects
 .hover-nav:hover .hover-button {
   display: block;
@@ -174,41 +175,27 @@ export default {
 .hover-nav {
   transition: all 1s;
 }
-// Name Location
-.name-margin {
-  position: unset;
-  margin-bottom: -5rem;
-}
-.position-a {
-  position: absolute;
-}
 // Background Color
 .bg-main {
   background-color: #000000;
 }
-// Squares
-.square {
-  height: 90px;
-  width: 110px;
+.bg-green {
+  background-color: #07cc73;
 }
-.one-bg {
-  background-color: #006336;
+// Image Size
+.img-size {
+  max-height: 10rem;
+  max-width: 10rem;
 }
-.two-bg {
-  background-color: #02854a;
+// Img Border
+.icon-border {
+  border-radius: 50%;
+  max-width: 8%;
 }
-.three-bg {
-  background-color: #029653;
+.li-border {
+  max-width: 8%;
 }
-.four-bg {
-  background-color: #01c76e;
-}
-// Font Size
-.font-large {
-  font-size: 175px;
-}
-// Font Style
-.font-jj {
-  font-family: "Bebas Neue" !important;
+.text-color {
+  color: #01c76e;
 }
 </style>
