@@ -13,17 +13,17 @@
           and I will respond as soon as possible.
         </h5>
         <br />
-        <h6 class="text-color">{ HIT AN ICON }</h6>
+        <h6 class="text-color mb-2">{ HIT AN ICON }</h6>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pt-3">
       <div
         class="col-2 text-center li-border"
         data-aos="fade-left"
         data-aos-duration="1000"
       >
         <img
-          class="img-size img-fluid"
+          class="img-size img-fluid pt-3"
           src="https://image.flaticon.com/icons/png/512/174/174857.png"
           alt=""
         />
@@ -42,7 +42,7 @@
         />
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pt-3">
       <div
         class="col-2 text-center mt-3"
         data-aos="fade-left"
