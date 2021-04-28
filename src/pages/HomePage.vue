@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid bg-main">
-    <div class="row align-items-end justify-content-center margin-top">
+    <div class="row align-items-end justify-content-center margin-top pt-5">
       <div
         class="col-6"
         data-aos="fade-left"
@@ -14,7 +14,7 @@
         <h1 class="text-right font-large font-jj text-white">JAVA</h1>
       </div>
       <div class="col-6">
-        <div class="row">
+        <div class="row mt-5">
           <div class="square one-bg blocksRowOne"></div>
         </div>
         <div class="row mt-3">
@@ -34,82 +34,80 @@
         </div>
       </div>
     </div>
-
     <div
-      class="row justify-content-center text-white mt-5"
+      class="row justify-content-center bg-main text-white pt-5"
       data-aos="fade-up"
-      data-aos-offset="300"
       data-aos-delay="2400"
       data-aos-duration="1000"
     >
-      <div class="col-1 text-center">
+      <div class="col-1 text-center pt-3">
         <div>
           <router-link :to="{ name: 'Home' }">
             <i
               class="text-white fa fa-circle-o-notch fa-lg hover-nav"
               aria-hidden="true"
             >
-              <h4 class="hover-button mt-5">Home Page</h4>
+              <h4 class="hover-button pt-3">Home Page</h4>
             </i>
           </router-link>
         </div>
       </div>
-      <div class="col-1 text-center">
+      <div class="col-1 text-center pt-3">
         <div>
           <router-link :to="{ name: 'BioPage' }">
             <i
               class="text-white fa fa-circle-o-notch fa-lg hover-nav"
               aria-hidden="true"
             >
-              <h4 class="hover-button mt-5">Bio</h4>
+              <h4 class="hover-button pt-3">Bio</h4>
             </i>
           </router-link>
         </div>
       </div>
-      <div class="col-1 text-center">
+      <div class="col-1 text-center pt-3">
         <div>
           <router-link :to="{ name: 'SkillsPage' }">
             <i
               class="text-white fa fa-circle-o-notch fa-lg hover-nav"
               aria-hidden="true"
             >
-              <h4 class="hover-button mt-5">Skills</h4>
+              <h4 class="hover-button pt-3">Skills</h4>
             </i>
           </router-link>
         </div>
       </div>
-      <div class="col-1 text-center">
+      <div class="col-1 text-center pt-3">
         <div>
           <router-link :to="{ name: 'AppsPage' }">
             <i
               class="text-white fa fa-circle-o-notch fa-lg hover-nav"
               aria-hidden="true"
             >
-              <h4 class="hover-button mt-5">Apps</h4>
+              <h4 class="hover-button pt-3">Apps</h4>
             </i>
           </router-link>
         </div>
       </div>
-      <div class="col-1 text-center">
+      <div class="col-1 text-center pt-3">
         <div>
           <router-link :to="{ name: 'HobbiesPage' }">
             <i
               class="text-white fa fa-circle-o-notch fa-lg hover-nav"
               aria-hidden="true"
             >
-              <h4 class="hover-button mt-5">Hobbies</h4>
+              <h4 class="hover-button pt-3">Hobbies</h4>
             </i>
           </router-link>
         </div>
       </div>
-      <div class="col-1 text-center">
+      <div class="col-1 text-center pt-3">
         <div>
           <router-link :to="{ name: 'ContactPage' }">
             <i
               class="text-white fa fa-circle-o-notch fa-lg hover-nav"
               aria-hidden="true"
             >
-              <h4 class="hover-button mt-5">Contact</h4>
+              <h4 class="hover-button pt-3">Contact</h4>
             </i>
           </router-link>
         </div>

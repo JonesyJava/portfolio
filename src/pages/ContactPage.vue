@@ -4,7 +4,6 @@
       <div
         class="col-6 text-white text-center pl-3"
         data-aos="fade-down"
-        data-aos-offset="500"
         data-aos-duration="1000"
       >
         <h1>CONTACT ME</h1>
@@ -19,41 +18,38 @@
     </div>
     <div class="row justify-content-center">
       <div
-        class="col-2 align-items-center li-border mt-3"
+        class="col-2 text-center li-border"
         data-aos="fade-left"
-        data-aos-offset="500"
         data-aos-duration="1000"
       >
         <img
-          class="img-size"
+          class="img-size img-fluid"
           src="https://image.flaticon.com/icons/png/512/174/174857.png"
           alt=""
         />
       </div>
     </div>
-    <div class="row justify-content-center mt-5">
+    <div class="row justify-content-center">
       <div
-        class="col-6 align-items-center icon-border"
+        class="col-2 text-center mt-3"
         data-aos="fade-right"
-        data-aos-offset="500"
         data-aos-duration="1000"
       >
         <img
-          class="img-size"
+          class="img-size img-fluid"
           src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png"
           alt=""
         />
       </div>
     </div>
-    <div class="row justify-content-center mt-3">
+    <div class="row justify-content-center">
       <div
-        class="col-2 align-items-center icon-border"
+        class="col-2 text-center mt-3"
         data-aos="fade-left"
-        data-aos-offset="500"
         data-aos-duration="1000"
       >
         <img
-          class="img-size"
+          class="img-size img-fluid"
           src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png"
           alt=""
         />
@@ -62,7 +58,6 @@
     <div
       class="row justify-content-center text-white mt-5"
       data-aos="fade-up"
-      data-aos-offset="300"
       data-aos-delay="1100"
       data-aos-duration="1000"
     >
@@ -149,7 +144,7 @@ import 'aos/dist/aos.css'
 
 AOS.init()
 export default {
-  name: 'CContactPage',
+  name: 'ContactPage',
   setup() {
     const route = useRoute()
     return {
@@ -184,18 +179,10 @@ export default {
 }
 // Image Size
 .img-size {
-  max-height: 10rem;
-  max-width: 10rem;
-}
-// Img Border
-.icon-border {
-  border-radius: 50%;
-  max-width: 8%;
-}
-.li-border {
-  max-width: 8%;
+  max-height: 5rem;
+  max-width: 5rem;
 }
 .text-color {
-  color: #01c76e;
+  color: #07cc73;
 }
 </style>

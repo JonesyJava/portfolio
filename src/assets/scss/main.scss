@@ -10,9 +10,7 @@
 #app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background-color: $body-bg;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -20,21 +18,22 @@ main {
   flex-grow: 1;
   display: flex;
   align-items: stretch;
+  height: 100vh;
 }
 .margin-top{
   @include media-breakpoint-only (xs) {
-    margin-top: 20rem;
+    margin-top: 0rem;
   }
   @include media-breakpoint-only (s) {
-    margin-top: 20rem;
+    margin-top: 0rem;
   }
   @include media-breakpoint-only (md) {
-    margin-top: 20rem;
+    margin-top: 0rem;
   }
   @include media-breakpoint-only (lg) {
-    margin-top: 20rem;
+    margin-top: 0rem;
   }
   @include media-breakpoint-only (xl) {
-    margin-top: 20rem;
+    margin-top: 0rem;
   }
 }
