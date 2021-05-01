@@ -1,6 +1,8 @@
 <template>
   <div class="container-fluid bg-main">
-    <div class="row align-items-end justify-content-center margin-top pt-5">
+    <div
+      class="row align-items-end justify-content-center margin-top mt- 5 pt-5"
+    >
       <div
         class="col-6"
         data-aos="fade-left"
@@ -34,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div
+    <!-- <div
       class="row justify-content-center bg-main text-white pt-5"
       data-aos="fade-up"
       data-aos-delay="2400"
@@ -112,7 +114,7 @@
           </router-link>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -159,19 +161,19 @@ export default {
 
 <style scoped lang="scss">
 // Hover Effects
-.hover-nav:hover .hover-button {
-  display: block;
-  transition: 1s;
-}
-.hover-button {
-  display: none;
-}
-.hover-nav:hover {
-  cursor: pointer;
-}
-.hover-nav {
-  transition: all 1s;
-}
+// .hover-nav:hover .hover-button {
+//   display: block;
+//   transition: 1s;
+// }
+// .hover-button {
+//   display: none;
+// }
+// .hover-nav:hover {
+//   cursor: pointer;
+// }
+// .hover-nav {
+//   transition: all 1s;
+// }
 // Name Location
 .name-margin {
   position: unset;

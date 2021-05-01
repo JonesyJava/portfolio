@@ -1,6 +1,13 @@
 <template>
   <div class="container-fluid bg-main">
-    <div>This is the BIO page</div>
+    <div>
+      <div class="row">
+        <div class="col-4 text-white text-center">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+
     <div
       class="row justify-content-center bg-main text-white pt-5"
       data-aos="fade-up"
