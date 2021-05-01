@@ -1,17 +1,51 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-main">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-main">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
         <img alt="logo" src="../assets/img/navbar-logo.png" height="45" />
       </div>
     </router-link>
+    <button
+      class="navbar-toggler bg-dark"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon" />
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link :to="{ name: 'BioPage' }" class="nav-link">
+            0.1 ABOUT
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'AppsPage' }" class="nav-link">
+            0.2 APPS
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'HobbiesPage' }" class="nav-link">
+            0.3 HOBBIES
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'ContactPage' }" class="nav-link">
+            0.4 CONTACT
+          </router-link>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 
 <script>
-import { AuthService } from '../services/AuthService'
-import { AppState } from '../AppState'
-import { computed, reactive } from 'vue'
+
+import { reactive } from 'vue'
 export default {
   name: 'Navbar',
   setup() {
@@ -19,14 +53,8 @@ export default {
       dropOpen: false
     })
     return {
-      state,
-      user: computed(() => AppState.user),
-      async login() {
-        AuthService.loginWithPopup()
-      },
-      async logout() {
-        await AuthService.logout({ returnTo: window.location.origin })
-      }
+      state
+
     }
   }
 }
@@ -54,7 +82,10 @@ a:hover {
 .nav-link {
   text-transform: uppercase;
 }
+.nav-item .nav-link {
+  color: azure;
+}
 .nav-item .nav-link.router-link-exact-active {
-  color: var(--primary);
+  color: #01c76e;
 }
 </style>
