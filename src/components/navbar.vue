@@ -29,8 +29,8 @@
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link :to="{ name: 'HobbiesPage' }" class="nav-link">
-            0.3 HOBBIES
+          <router-link :to="{ name: 'SkillsPage' }" class="nav-link">
+            0.3 SKILLS
           </router-link>
         </li>
         <li class="nav-item">
