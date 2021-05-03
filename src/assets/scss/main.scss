@@ -6,11 +6,12 @@
 :root {
   --grey: #f6f6f6;
 }
-
 #app {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   background-color: $body-bg;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -18,8 +19,23 @@ main {
   flex-grow: 1;
   display: flex;
   align-items: stretch;
-  height: 100vh;
 }
+
+// #app {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: $body-bg;
+//   scroll-behavior: smooth;
+// }
+
+// main {
+//   flex-grow: 1;
+//   display: flex;
+//   align-items: stretch;
+//   height: 100vh;
+// }
+
+
 // .margin-top{
 //   @include media-breakpoint-only (xs) {
 //     margin-top: 0rem;
