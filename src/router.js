@@ -17,11 +17,6 @@ const routes = [
     component: loadPage('BioPage')
   },
   {
-    path: '/hobbiespage',
-    name: 'HobbiesPage',
-    component: loadPage('HobbiesPage')
-  },
-  {
     path: '/skillspage',
     name: 'SkillsPage',
     component: loadPage('SkillsPage')
