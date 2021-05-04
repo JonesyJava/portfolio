@@ -22,11 +22,13 @@
         data-aos="fade-left"
         data-aos-duration="1000"
       >
-        <img
-          class="img-size img-fluid pt-3"
-          src="https://image.flaticon.com/icons/png/512/174/174857.png"
-          alt=""
-        />
+        <a href="https://www.linkedin.com/in/jonesyjava/">
+          <img
+            class="img-size img-fluid pt-3"
+            src="https://image.flaticon.com/icons/png/512/174/174857.png"
+            alt=""
+          />
+        </a>
       </div>
     </div>
     <div class="row justify-content-center pt-3">
@@ -35,11 +37,13 @@
         data-aos="fade-right"
         data-aos-duration="1000"
       >
-        <img
-          class="img-size img-fluid"
-          src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png"
-          alt=""
-        />
+        <a href="https://github.com/JonesyJava">
+          <img
+            class="img-size img-fluid"
+            src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png"
+            alt=""
+          />
+        </a>
       </div>
     </div>
     <div class="row justify-content-center pt-3">
@@ -48,11 +52,13 @@
         data-aos="fade-left"
         data-aos-duration="1000"
       >
-        <img
-          class="img-size img-fluid"
-          src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png"
-          alt=""
-        />
+        <a href="mailto:jonesyjava@gmail.com?subject=Message from your Website">
+          <img
+            class="img-size img-fluid"
+            src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png"
+            alt=""
+          />
+        </a>
       </div>
     </div>
   </div>
