@@ -61,7 +61,7 @@ export default {
 }
 a {
   text-decoration: none;
-  color: #00c954;
+  color: #02af17;
   position: relative;
 }
 a:hover::after {
